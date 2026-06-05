@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>疏散小游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+    <!-- 开始界面 -->
+    <div id="start-screen" class="screen">
+        <h1>疏散小游戏</h1>
+        <p class="description">
+            你将扮演疏散场景中的一名个体。你只能看到自己周围有限范围内的信息。
+            请使用 W/A/S/D 或方向键控制移动，目标是找到出口。
+        </p>
+
+        <button id="start-btn">开始游戏</button>
+    </div>
+
+    <!-- 游戏界面 -->
+    <div id="game-screen" class="screen hidden">
+        <div class="top-bar">
+            <span id="status-text">游戏进行中</span>
+        </div>
+
+        <canvas id="game-canvas" width="600" height="600"></canvas>
+
+        <div class="tips">
+            操作：W/A/S/D 或方向键移动
+        </div>
+    </div>
+
+    <!-- 结束界面 -->
+    <div id="finish-screen" class="screen hidden">
+        <h1>游戏完成</h1>
+        <p id="finish-text"></p>
+
+        <button id="restart-btn">重新开始</button>
+    </div>
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
