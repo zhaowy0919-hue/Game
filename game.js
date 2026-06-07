@@ -186,11 +186,6 @@ function drawCell(cell, x, y) {
 
     ctx.fillRect(x, y, CELL_SIZE, CELL_SIZE);
 
-    // 网格线
-    ctx.strokeStyle = "#666666";
-    ctx.lineWidth = 1;
-    ctx.strokeRect(x, y, CELL_SIZE, CELL_SIZE);
-
     // 玩家单独画成圆
     if (cell === PLAYER) {
         ctx.beginPath();
