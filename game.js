@@ -11,7 +11,7 @@ const PLAYER = 2;    // 玩家
 const EXIT = 3;      // 出口
 
 let sessionId = null;
-let localMap = null;
+let localMap = null；
 let gameStarted = false;
 let gameFinished = false;
 
@@ -49,7 +49,7 @@ restartBtn.addEventListener("click", function () {
 
 async function startGame() {
     try {
-        const response = await fetch(`${API_BASE}/api/start_game`, {
+        const response = await fetch(API_BASE + "/api/start_game", {
             method: "POST"
         });
 
@@ -109,7 +109,7 @@ document.addEventListener("keydown", async function (event) {
 
 async function sendMove(direction) {
     try {
-        const response = await fetch(`${API_BASE}/api/move`, {
+        const response = await fetch(API_BASE + "/api/move", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
