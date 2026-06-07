@@ -203,7 +203,7 @@ function drawCell(cell, x, y) {
             0,
             Math.PI * 2
         );
-        ctx.fillStyle = "#4f8cff";
+        ctx.fillStyle = "#ffa500";
         ctx.fill();
     }
 }
