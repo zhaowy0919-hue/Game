@@ -180,8 +180,6 @@ function drawCell(cell, x, y) {
         ctx.fillStyle = "#d3d3d3";
     } else if (cell === EXIT) {
         ctx.fillStyle = "#50c878";
-    } else if (cell === PLAYER) {
-        ctx.fillStyle = "#ffa500";
     } else {
         ctx.fillStyle = "#0a0a0a";
     }
