@@ -11,7 +11,7 @@ const PLAYER = 2;    // 玩家
 const EXIT = 3;      // 出口
 
 let sessionId = null;
-let localMap = null；
+let localMap = null;
 let gameStarted = false;
 let gameFinished = false;
 
