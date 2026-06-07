@@ -173,17 +173,17 @@ function drawLocalMap(map) {
 
 function drawCell(cell, x, y) {
     if (cell === UNKNOWN) {
-        ctx.fillStyle = "#111111";
+        ctx.fillStyle = "#0a0a0a";
     } else if (cell === FLOOR) {
-        ctx.fillStyle = "#eeeeee";
+        ctx.fillStyle = "#ffffff";
     } else if (cell === WALL) {
-        ctx.fillStyle = "#333333";
+        ctx.fillStyle = "#d3d3d3";
     } else if (cell === EXIT) {
-        ctx.fillStyle = "#4caf50";
+        ctx.fillStyle = "#50c878";
     } else if (cell === PLAYER) {
-        ctx.fillStyle = "#eeeeee";
+        ctx.fillStyle = "#ffa500";
     } else {
-        ctx.fillStyle = "#111111";
+        ctx.fillStyle = "#0a0a0a";
     }
 
     ctx.fillRect(x, y, CELL_SIZE, CELL_SIZE);
