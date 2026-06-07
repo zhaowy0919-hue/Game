@@ -181,14 +181,14 @@ function drawCell(cell, x, y) {
     } else if (cell === EXIT) {
         ctx.fillStyle = "#50c878";
     } else {
-        ctx.fillStyle = "#0a0a0a";
+        ctx.fillStyle = "#ffffff";
     }
 
     ctx.fillRect(x, y, CELL_SIZE, CELL_SIZE);
 
     // 网格线
     ctx.strokeStyle = "#666666";
-    ctx.lineWidth = 0.1;
+    ctx.lineWidth = 1;
     ctx.strokeRect(x, y, CELL_SIZE, CELL_SIZE);
 
     // 玩家单独画成圆
